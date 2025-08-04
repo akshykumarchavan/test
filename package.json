@@ -1,0 +1,19 @@
+{
+  "name": "healthcare-appointment-system",
+  "version": "1.0.0",
+  "description": "A comprehensive healthcare appointment scheduling system with email notifications and doctor UI",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-deps": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["healthcare", "appointment", "scheduling", "telemedicine", "clinic"],
+  "author": "Healthcare System",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
